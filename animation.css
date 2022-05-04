@@ -1,0 +1,43 @@
+body {
+    height: 100vh;
+    background-color: #eb3238;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-size: 55px;
+}
+
+.word:before {
+    border: 1px solid blue;
+}
+
+.word:before {
+    content: "CSS";
+    text-transform: uppercase;
+    color: #241b86;
+    animation: switch-word 10s 2s infinite;
+}
+
+@keyframes switch-word {
+    0% {
+        content: "CSS";
+    }
+
+   30% {
+        content: "HTML";
+    }
+
+    60% {
+        content: "JavaScript";
+    }
+
+    90% {
+        content: "CSS";
+    }
+
+    
+}
